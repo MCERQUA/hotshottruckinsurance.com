@@ -79,7 +79,7 @@ const config: Config = {
           "linear-gradient(180deg, #F8FAFC 0%, #EEF2F8 40%, #E8EFF8 70%, #F8FAFC 100%)",
         "warm-radial":
           "radial-gradient(circle at 30% 20%, rgba(45,68,148,0.10) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(61,158,122,0.08) 0%, transparent 55%)",
-        "clay-gradient": "linear-gradient(135deg, #1B2A5E 0%, #2D4494 100%)",
+        "clay-gradient": "linear-gradient(135deg, #0F1824 0%, #B86900 100%)",
         "sage-gradient": "linear-gradient(135deg, #3D9E7A 0%, #5DBDA0 100%)",
         "gold-gradient": "linear-gradient(135deg, #E88C0D 0%, #F0AD4E 100%)",
       },
