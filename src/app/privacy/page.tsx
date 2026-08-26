@@ -29,7 +29,7 @@ export default function PrivacyPage() {
               <p>When you request a quote or contact us, we may collect:</p>
               <ul>
                 <li>Your name, business name, and contact details (email, phone, address)</li>
-                <li>Information about your dairy and operations needed to quote insurance (herd size, equipment value, payroll, loss history)</li>
+                <li>Information about your trucking operation needed to quote insurance (vehicle and trailer details, MC/DOT authority, equipment value, loss history)</li>
                 <li>Communications you send us and non-identifying usage data about your visit</li>
               </ul>
 
