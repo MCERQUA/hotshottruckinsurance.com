@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: `${SITE.name} | Contractors Choice Agency`,
     description:
       "Specialized insurance for hot shot truckers and owner-operators — motor carrier authority, cargo, physical damage, bobtail, trailer interchange, non-trucking liability, general liability, and occupational accident coverage. Licensed all 50 states. 15-min quotes.",
-    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: `${SITE.name} — hot shot trucking coverage` }],
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 624, alt: `${SITE.name} — hot shot trucking coverage` }],
   },
   twitter: {
     card: "summary_large_image",
