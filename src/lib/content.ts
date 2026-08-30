@@ -10,7 +10,7 @@ export const COPY = {
     h1Highlight: "Owner-Operators Who Move Fast",
     subcopy:
       "FMCSA-compliant authority filings, cargo, physical damage, bobtail, and trailer interchange — built for 1-ton pickups, gooseneck rigs, and flatbeds. Get a quote in 15 minutes.",
-    imageAlt: "Hot shot truck and gooseneck trailer on an open highway",
+    imageAlt: "White dually pickup towing a gooseneck flatbed trailer loaded with banded lumber on a highway",
     statValue: "500+",
     statLabel: "Hot shot operators insured nationwide",
   },
@@ -46,7 +46,7 @@ export const COPY = {
     h2Lead: "Writing Hot Shot Coverage",
     h2Highlight: "in All 50 States",
     lead: "Whether you\\u2019re running Permian Basin oilfield loads, Midwest agricultural freight, or coastal industrial hauls, our A-rated carrier partners write hot shot programs in every state.",
-    imageAlt: "USA coverage map for hot shot trucking insurance",
+    imageAlt: "Silver dually pickup towing an empty gooseneck flatbed trailer on a desert highway",
     badgeTitle: "All 50 states",
     badgeSub: "Licensed & actively writing",
   },
@@ -109,7 +109,7 @@ export const COPY = {
     h1Lead: "Built for Hot Shot Truckers by",
     h1Highlight: "People Who Know the Road",
     lead: "Contractors Choice Agency has specialized in commercial trucking insurance since 2005. We understand the unique risks owner-operators face — from FMCSA authority filings to cargo gaps — and we build programs that actually fit how hot shot carriers operate.",
-    imageAlt: "Hot Shot Truck Insurance team — Contractors Choice Agency",
+    imageAlt: "Hot shot owner-operator standing beside his white dually and gooseneck flatbed trailer at sunset",
     storyEyebrow: "Our story",
     storyTitle: "Two Decades Protecting Owner-Operators",
     storyLead:
