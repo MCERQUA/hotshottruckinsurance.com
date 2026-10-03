@@ -44,7 +44,7 @@ export default function CoveragePage() {
               <span className="pill-clay">Coverage Area</span>
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 {COPY.coveragePage.h1Lead}{" "}
-                <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{COPY.coveragePage.h1Highlight}</span>
+                <span className="text-clay">{COPY.coveragePage.h1Highlight}</span>
               </h1>
               <p className="mt-6 lead max-w-2xl mx-auto">{COPY.coveragePage.lead}</p>
             </FadeIn>

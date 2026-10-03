@@ -92,11 +92,11 @@ export default async function ServiceDetailPage({ params }: Props) {
             </FadeIn>
             <div className="grid lg:grid-cols-12 gap-10 items-center">
               <FadeIn className="lg:col-span-7">
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-clay-gradient text-white mb-5 shadow-warm"><Icon className="h-7 w-7" strokeWidth={2.2} /></div>
+                <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-espresso text-white mb-5 shadow-warm"><Icon className="h-7 w-7" strokeWidth={2.2} /></div>
                 <span className="pill-sage">Coverage line</span>
                 <h1 className="mt-4 font-heading font-extrabold text-espresso text-4xl md:text-5xl leading-[1.08] tracking-tight">
                   {service.title}{" "}
-                  <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{COPY.serviceDetail.h1Suffix}</span>
+                  <span className="text-clay">{COPY.serviceDetail.h1Suffix}</span>
                 </h1>
                 {detail && <p className="mt-5 lead max-w-2xl">{detail.heroBlurb}</p>}
                 <div className="mt-7 flex flex-col sm:flex-row gap-3">

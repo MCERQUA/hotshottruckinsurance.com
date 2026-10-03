@@ -8,7 +8,7 @@ import { FadeIn } from "@/components/animations/FadeIn";
 
 export function FinalCTA() {
   return (
-    <section className="relative overflow-hidden bg-clay-gradient py-20 md:py-24">
+    <section className="relative overflow-hidden bg-espresso py-20 md:py-24">
       <div className="absolute inset-0 dotted-warm opacity-40" aria-hidden />
       <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(circle at 80% 20%, rgba(255,255,255,0.25) 0%, transparent 40%)" }} aria-hidden />
 

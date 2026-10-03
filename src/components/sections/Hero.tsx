@@ -28,7 +28,7 @@ export function Hero() {
 
             <motion.h1 {...item} className="mt-5 font-heading font-extrabold text-espresso text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl leading-[1.05] tracking-tight">
               {COPY.hero.h1Lead}{" "}
-              <span className="relative z-10 bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{COPY.hero.h1Highlight}</span>.
+              <span className="relative z-10 text-clay">{COPY.hero.h1Highlight}</span>.
             </motion.h1>
 
             <motion.p {...item} className="mt-6 lead max-w-xl">{COPY.hero.subcopy}</motion.p>
@@ -50,12 +50,12 @@ export function Hero() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-t-[6rem] rounded-b-3xl shadow-warm-lg border-4 border-white">
                 <img src="/images/hero.jpg" alt={COPY.hero.imageAlt} className="w-full h-[420px] md:h-[520px] object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-t from-espresso/30 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
               </div>
 
               <motion.div initial={prefersReduced ? {} : { opacity: 0, y: 20 }} animate={prefersReduced ? {} : { opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="absolute -bottom-6 -left-4 md:-left-8 bg-white rounded-2xl shadow-warm-lg border border-adobe p-5 max-w-[15rem]">
                 <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 h-11 w-11 rounded-xl bg-clay-gradient flex items-center justify-center">
+                  <div className="flex-shrink-0 h-11 w-11 rounded-xl bg-espresso flex items-center justify-center">
                     <ShieldCheck className="h-6 w-6 text-white" />
                   </div>
                   <div>

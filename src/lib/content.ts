@@ -53,11 +53,6 @@ export const COPY = {
   process: {
     lead: "Most hot shot carriers get their full program — authority filings, cargo, physical damage, and bobtail — quoted and bound in under an hour.",
   },
-  testimonials: {
-    eyebrow: "Owner-operator stories",
-    h2Lead: "Hot Shot Carriers Who",
-    h2Highlight: "Covered With CCA",
-  },
   finalCta: {
     h2Lead: "Ready to Protect",
     h2Highlight: "Your Rig and Your Loads?",
@@ -249,7 +244,7 @@ export const GENERAL_FAQS = [
   { q: "What is NPN 8608479?", a: "NPN 8608479 is the National Producer Number for Contractors Choice Agency — our license identifier with state insurance departments. You can verify our license at the NIPR website using this number." },
   { q: "How do I update my coverage mid-term?", a: "Call or email us anytime. Mid-term changes — adding a trailer, updating cargo limits, or adding a driver — are processed quickly and we\\u2019ll issue updated certificates the same day in most cases." },
   { q: "Do you work with specific insurance carriers?", a: "We work with multiple A-rated commercial trucking carriers and select the best fit for your operation, driving record, and cargo type. We\\u2019re not captive agents — we shop the market on your behalf." },
-  { q: "What\\u2019s your address?", a: "Contractors Choice Agency is located at 12220 E Riggs Road, Suite #105, Chandler, AZ 85249. We serve clients nationally by phone and email." },
+  { q: "What\\u2019s your address?", a: "Contractors Choice Agency is located at 12220 E Riggs Rd, Suite #104, Chandler, AZ 85249. We serve clients nationally by phone and email." },
   { q: "What are your business hours?", a: "Our agents are available Monday through Friday, 8am to 5pm Mountain Standard Time. You can also submit quote requests online at any time and we\\u2019ll respond the next business day." },
   { q: "Can I get proof of insurance immediately?", a: "Yes. Once your policy is bound, we issue your certificate of insurance immediately. Most carriers also provide digital policy documents same-day." },
   { q: "What if I have a poor driving record?", a: "We work with carriers who specialize in non-standard and high-risk trucking accounts. A poor MVR or prior loss history will affect your premium, but we have markets for most situations. Be upfront about your record when requesting a quote." },

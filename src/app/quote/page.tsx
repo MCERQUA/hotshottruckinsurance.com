@@ -80,7 +80,7 @@ export default function QuotePage() {
               <span className="pill-clay"><ShieldCheck className="h-3.5 w-3.5" /> Free quote</span>
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 {COPY.quote.h1Lead}{" "}
-                <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{COPY.quote.h1Highlight}</span>
+                <span className="text-clay">{COPY.quote.h1Highlight}</span>
               </h1>
               <p className="mt-5 lead">{COPY.quote.lead}</p>
             </FadeIn>
@@ -244,7 +244,7 @@ export default function QuotePage() {
                         <input id="coverage_type" name="coverage_type" type="text" value={formData.coverage_type} onChange={handleChange} className={inputClass} />
                       </div>
 
-                      <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
+                      <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-espresso text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
                         {submitting ? "Sending…" : "Request my free quote"}{!submitting && <ArrowRight className="h-5 w-5" />}
                       </button>
                       <p className="text-xs text-center text-mocha/70">No spam. No commitment. We'll only contact you about your quote.</p>

@@ -57,7 +57,7 @@ export default function ContactPage() {
               <span className="pill-clay"><MessageCircle className="h-3.5 w-3.5" /> Contact</span>
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 {COPY.contact.h1Lead}{" "}
-                <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{COPY.contact.h1Highlight}</span>
+                <span className="text-clay">{COPY.contact.h1Highlight}</span>
               </h1>
               <p className="mt-5 lead max-w-2xl mx-auto">{COPY.contact.lead}</p>
             </FadeIn>
@@ -109,7 +109,7 @@ export default function ContactPage() {
 
                   {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
 
-                  <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
+                  <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-espresso text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
                     {submitting ? "Sending…" : "Send message"}{!submitting && <ArrowRight className="h-5 w-5" />}
                   </button>
                 </form>

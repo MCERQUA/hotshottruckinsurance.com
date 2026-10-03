@@ -14,7 +14,7 @@ export const SITE = {
   founded: 2005,
   npn: "8608479",
   address: {
-    street: "12220 E Riggs Road, Suite #105",
+    street: "12220 E Riggs Rd, Suite #104",
     city: "Chandler",
     state: "AZ",
     zip: "85249",
@@ -221,23 +221,3 @@ export const STATS = [
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    quote: "I run a 1-ton dually with a 40-foot gooseneck. Every agent I called wanted to write it as a regular pickup. Hot Shot Truck Insurance actually understood bobtail vs. non-trucking vs. cargo and built a program that fits how I actually operate. First real apples-to-apples quote I\u2019ve gotten.",
-    name: "Derek M.",
-    role: "Owner-Operator",
-    location: "Texas",
-  },
-  {
-    quote: "Freight broker required MCS-90 and a $100K cargo limit in 24 hours or I lost the lane. These guys filed authority endorsements and had my certificate of insurance same-day. Nobody else could move that fast.",
-    name: "Stephanie R.",
-    role: "Hot Shot Carrier",
-    location: "Oklahoma",
-  },
-  {
-    quote: "A trailer I was hauling under interchange got sideswiped at a fuel stop. Owner came after me for the damage. My trailer interchange policy with CCA covered the repair completely. Saved me $18,000 out of pocket.",
-    name: "Tony L.",
-    role: "Independent Operator",
-    location: "Louisiana",
-  },
-] as const;

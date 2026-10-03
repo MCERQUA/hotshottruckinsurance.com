@@ -78,7 +78,7 @@ export default async function LocationPage({ params }: Props) {
                 <span className="pill-clay"><MapPin className="h-3.5 w-3.5" />{loc.name} · {loc.region}</span>
                 <h1 className="mt-4 font-heading font-extrabold text-espresso text-4xl md:text-5xl leading-[1.08] tracking-tight">
                   {SITE.name} —{" "}
-                  <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{loc.name}</span>
+                  <span className="text-clay">{loc.name}</span>
                 </h1>
                 <p className="mt-5 lead max-w-2xl">{loc.intro}</p>
                 <div className="mt-7 flex flex-col sm:flex-row gap-3">

@@ -40,7 +40,7 @@ export default function AboutPage() {
               <span className="pill-clay">About us</span>
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 {COPY.about.h1Lead}{" "}
-                <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{COPY.about.h1Highlight}</span>.
+                <span className="text-clay">{COPY.about.h1Highlight}</span>.
               </h1>
               <p className="mt-6 lead">{COPY.about.lead}</p>
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
@@ -79,7 +79,7 @@ export default function AboutPage() {
               {COPY.about.timeline.map((t, i) => (
                 <FadeIn key={t.title} delay={i * 0.08}>
                   <div className="flex flex-col md:flex-row gap-4 md:gap-8 p-6 rounded-3xl bg-white border border-adobe shadow-card">
-                    <div className="md:w-40 flex-shrink-0"><span className="inline-flex px-4 py-2 rounded-full bg-clay-gradient text-white font-heading font-extrabold">{t.year}</span></div>
+                    <div className="md:w-40 flex-shrink-0"><span className="inline-flex px-4 py-2 rounded-full bg-espresso text-white font-heading font-extrabold">{t.year}</span></div>
                     <div>
                       <h3 className="font-heading font-bold text-xl text-espresso">{t.title}</h3>
                       <p className="mt-1 text-mocha leading-relaxed">{t.desc}</p>
