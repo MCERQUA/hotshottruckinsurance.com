@@ -40,6 +40,11 @@ export default function QuotePage() {
     current_coverage_limits: "",
     prior_auto_insurance: "",
     coverage_type: "", city: "", zip: "",
+    effective_date: "",
+    limits_requested: "",
+    gross_revenue: "",
+    losses_3yr_count: "",
+    losses_3yr_details: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -242,6 +247,26 @@ export default function QuotePage() {
                       <div>
                         <label htmlFor="coverage_type" className={labelClass}>Coverage type (Personal / Commercial / Track Day)</label>
                         <input id="coverage_type" name="coverage_type" type="text" value={formData.coverage_type} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="effective_date" className={labelClass}>Requested coverage start date</label>
+                        <input id="effective_date" name="effective_date" type="date" value={formData.effective_date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="limits_requested" className={labelClass}>Liability limits wanted</label>
+                        <input id="limits_requested" name="limits_requested" type="text" placeholder="e.g. 1M/2M" value={formData.limits_requested} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="gross_revenue" className={labelClass}>Annual gross revenue</label>
+                        <input id="gross_revenue" name="gross_revenue" type="text" value={formData.gross_revenue} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="losses_3yr_count" className={labelClass}>Claims in the last 3 years</label>
+                        <input id="losses_3yr_count" name="losses_3yr_count" type="number" value={formData.losses_3yr_count} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="losses_3yr_details" className={labelClass}>Claim details: dates, what happened, amounts</label>
+                        <textarea id="losses_3yr_details" name="losses_3yr_details" rows={3} value={formData.losses_3yr_details} onChange={handleChange} className={`${inputClass} resize-none`} />
                       </div>
 
                       <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-espresso text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
