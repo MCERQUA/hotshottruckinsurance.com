@@ -34,7 +34,6 @@ export default function QuotePage() {
     vehicle_value: "",
     accessories_description: "",
     accessories_value: "",
-    current_policy_number: "",
     current_policy_start_date: "",
     current_policy_expiration_date: "",
     current_coverage_limits: "",
@@ -223,10 +222,6 @@ export default function QuotePage() {
                       <div>
                         <label htmlFor="accessories_value" className={labelClass}>Value of accessories</label>
                         <input id="accessories_value" name="accessories_value" type="text" value={formData.accessories_value} onChange={handleChange} className={inputClass} />
-                      </div>
-                      <div>
-                        <label htmlFor="current_policy_number" className={labelClass}>Current policy number</label>
-                        <input id="current_policy_number" name="current_policy_number" type="text" value={formData.current_policy_number} onChange={handleChange} className={inputClass} />
                       </div>
                       <div>
                         <label htmlFor="current_policy_start_date" className={labelClass}>Policy start date</label>
