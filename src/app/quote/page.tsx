@@ -228,7 +228,7 @@ export default function QuotePage() {
                       </div>
                       <div>
                         <label htmlFor="driver_names" className={labelClass}>All drivers - name, date of birth and licence number</label>
-                        <textarea id="driver_names" name="driver_names" rows={3} value={formData.driver_names} onChange={handleChange} className={`${{inputClass}} resize-none`} />
+                        <textarea id="driver_names" name="driver_names" rows={3} value={formData.driver_names} onChange={handleChange} className={`${inputClass} resize-none`} />
                       </div>
                       <div>
                         <label htmlFor="vehicle_year" className={labelClass}>Vehicle year</label>
@@ -244,7 +244,7 @@ export default function QuotePage() {
                       </div>
                       <div>
                         <label htmlFor="vehicle_vin" className={labelClass}>VIN - every vehicle and trailer</label>
-                        <textarea id="vehicle_vin" name="vehicle_vin" rows={3} value={formData.vehicle_vin} onChange={handleChange} className={`${{inputClass}} resize-none`} />
+                        <textarea id="vehicle_vin" name="vehicle_vin" rows={3} value={formData.vehicle_vin} onChange={handleChange} className={`${inputClass} resize-none`} />
                       </div>
                       <div>
                         <label htmlFor="vehicle_value" className={labelClass}>Vehicle value</label>
@@ -252,7 +252,7 @@ export default function QuotePage() {
                       </div>
                       <div>
                         <label htmlFor="accessories_description" className={labelClass}>Description of accessories</label>
-                        <textarea id="accessories_description" name="accessories_description" rows={3} value={formData.accessories_description} onChange={handleChange} className={`${{inputClass}} resize-none`} />
+                        <textarea id="accessories_description" name="accessories_description" rows={3} value={formData.accessories_description} onChange={handleChange} className={`${inputClass} resize-none`} />
                       </div>
                       <div>
                         <label htmlFor="accessories_value" className={labelClass}>Value of accessories</label>
