@@ -44,6 +44,41 @@ export default function QuotePage() {
     gross_revenue: "",
     losses_3yr_count: "",
     losses_3yr_details: "",
+    entityType: "",
+    drivers_license_state: "",
+    fein: "",
+    physicalCounty: "",
+    currentCarrier: "",
+    usdotNumber: "",
+    mcNumber: "",
+    mailing_same_as_physical: "",
+    mailing_state: "",
+    additionalInsuredState: "",
+    certificateNeededBy: "",
+    fullTimeEmployees: "",
+    partTimeEmployees: "",
+    yearsInBusinessNumber: "",
+    annualRevenue: "",
+    mailing_street_address: "",
+    mailing_city: "",
+    mailing_county: "",
+    mailing_zip: "",
+    additionalInsuredName: "",
+    additionalInsuredAddress: "",
+    additionalInsuredCity: "",
+    additionalInsuredZip: "",
+    loss1Date: "",
+    loss1LineOfBusiness: "",
+    loss1Amount: "",
+    loss1Status: "",
+    loss2Date: "",
+    loss2LineOfBusiness: "",
+    loss2Amount: "",
+    loss2Status: "",
+    loss3Date: "",
+    loss3LineOfBusiness: "",
+    loss3Amount: "",
+    loss3Status: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -262,6 +297,154 @@ export default function QuotePage() {
                       <div>
                         <label htmlFor="losses_3yr_details" className={labelClass}>Claim details: dates, what happened, amounts</label>
                         <textarea id="losses_3yr_details" name="losses_3yr_details" rows={3} value={formData.losses_3yr_details} onChange={handleChange} className={`${inputClass} resize-none`} />
+                      </div>
+
+                      <div className="pt-2">
+                        <p className="font-semibold mb-1">Business details (optional - helps us quote without a callback)</p>
+                      </div>
+                      <div>
+                        <label htmlFor="fein" className={labelClass}>FEIN (not SSN)</label>
+                        <input id="fein" name="fein" type="text" value={formData.fein} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="entityType" className={labelClass}>Entity type</label>
+                        <select id="entityType" name="entityType" value={formData.entityType} onChange={handleChange} className={inputClass}><option value="">Select...</option><option value="Sole proprietor">Sole proprietor</option><option value="LLC">LLC</option><option value="Corporation">Corporation</option><option value="S-Corporation">S-Corporation</option><option value="Partnership">Partnership</option><option value="Other">Other</option></select>
+                      </div>
+                      <div>
+                        <label htmlFor="physicalCounty" className={labelClass}>Physical county</label>
+                        <input id="physicalCounty" name="physicalCounty" type="text" value={formData.physicalCounty} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <fieldset>
+                        <legend className={labelClass}>Is your mailing address the same as your physical address?</legend>
+                        <label className="mr-6 text-sm"><input type="radio" name="mailing_same_as_physical" value="Yes" checked={formData.mailing_same_as_physical === "Yes"} onChange={handleChange} /> Yes</label>
+                        <label className="text-sm"><input type="radio" name="mailing_same_as_physical" value="No" checked={formData.mailing_same_as_physical === "No"} onChange={handleChange} /> No</label>
+                      </fieldset>
+                      <div>
+                        <label htmlFor="mailing_street_address" className={labelClass}>Mailing street address</label>
+                        <input id="mailing_street_address" name="mailing_street_address" type="text" value={formData.mailing_street_address} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="mailing_city" className={labelClass}>Mailing city</label>
+                        <input id="mailing_city" name="mailing_city" type="text" value={formData.mailing_city} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="mailing_county" className={labelClass}>Mailing county</label>
+                        <input id="mailing_county" name="mailing_county" type="text" value={formData.mailing_county} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="mailing_state" className={labelClass}>Mailing state</label>
+                        <select id="mailing_state" name="mailing_state" value={formData.mailing_state} onChange={handleChange} className={inputClass}><option value="">Select...</option>{US_STATES.map((st) => (<option key={st} value={st}>{st}</option>))}</select>
+                      </div>
+                      <div>
+                        <label htmlFor="mailing_zip" className={labelClass}>Mailing ZIP</label>
+                        <input id="mailing_zip" name="mailing_zip" type="text" value={formData.mailing_zip} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="drivers_license_state" className={labelClass}>Driver's license state</label>
+                        <select id="drivers_license_state" name="drivers_license_state" value={formData.drivers_license_state} onChange={handleChange} className={inputClass}><option value="">Select...</option>{US_STATES.map((st) => (<option key={st} value={st}>{st}</option>))}</select>
+                      </div>
+                      <div>
+                        <label htmlFor="currentCarrier" className={labelClass}>Current insurance carrier</label>
+                        <input id="currentCarrier" name="currentCarrier" type="text" value={formData.currentCarrier} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="fullTimeEmployees" className={labelClass}>Full-time employees</label>
+                        <input id="fullTimeEmployees" name="fullTimeEmployees" type="number" value={formData.fullTimeEmployees} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="partTimeEmployees" className={labelClass}>Part-time employees</label>
+                        <input id="partTimeEmployees" name="partTimeEmployees" type="number" value={formData.partTimeEmployees} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="yearsInBusinessNumber" className={labelClass}>Years in business (number)</label>
+                        <input id="yearsInBusinessNumber" name="yearsInBusinessNumber" type="number" value={formData.yearsInBusinessNumber} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="annualRevenue" className={labelClass}>Annual revenue (number)</label>
+                        <input id="annualRevenue" name="annualRevenue" type="number" value={formData.annualRevenue} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="usdotNumber" className={labelClass}>USDOT number</label>
+                        <input id="usdotNumber" name="usdotNumber" type="text" value={formData.usdotNumber} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="mcNumber" className={labelClass}>MC number</label>
+                        <input id="mcNumber" name="mcNumber" type="text" value={formData.mcNumber} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div className="pt-2"><p className="font-semibold mb-1">Loss 1 (last 3 years, optional)</p></div>
+                      <div>
+                        <label htmlFor="loss1Date" className={labelClass}>Date of loss</label>
+                        <input id="loss1Date" name="loss1Date" type="date" value={formData.loss1Date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss1LineOfBusiness" className={labelClass}>Line of business</label>
+                        <input id="loss1LineOfBusiness" name="loss1LineOfBusiness" type="text" value={formData.loss1LineOfBusiness} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss1Amount" className={labelClass}>Amount paid</label>
+                        <input id="loss1Amount" name="loss1Amount" type="number" value={formData.loss1Amount} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss1Status" className={labelClass}>Status</label>
+                        <select id="loss1Status" name="loss1Status" value={formData.loss1Status} onChange={handleChange} className={inputClass}><option value="">Select...</option><option value="Open">Open</option><option value="Closed">Closed</option></select>
+                      </div>
+                      <div className="pt-2"><p className="font-semibold mb-1">Loss 2 (last 3 years, optional)</p></div>
+                      <div>
+                        <label htmlFor="loss2Date" className={labelClass}>Date of loss</label>
+                        <input id="loss2Date" name="loss2Date" type="date" value={formData.loss2Date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss2LineOfBusiness" className={labelClass}>Line of business</label>
+                        <input id="loss2LineOfBusiness" name="loss2LineOfBusiness" type="text" value={formData.loss2LineOfBusiness} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss2Amount" className={labelClass}>Amount paid</label>
+                        <input id="loss2Amount" name="loss2Amount" type="number" value={formData.loss2Amount} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss2Status" className={labelClass}>Status</label>
+                        <select id="loss2Status" name="loss2Status" value={formData.loss2Status} onChange={handleChange} className={inputClass}><option value="">Select...</option><option value="Open">Open</option><option value="Closed">Closed</option></select>
+                      </div>
+                      <div className="pt-2"><p className="font-semibold mb-1">Loss 3 (last 3 years, optional)</p></div>
+                      <div>
+                        <label htmlFor="loss3Date" className={labelClass}>Date of loss</label>
+                        <input id="loss3Date" name="loss3Date" type="date" value={formData.loss3Date} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss3LineOfBusiness" className={labelClass}>Line of business</label>
+                        <input id="loss3LineOfBusiness" name="loss3LineOfBusiness" type="text" value={formData.loss3LineOfBusiness} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss3Amount" className={labelClass}>Amount paid</label>
+                        <input id="loss3Amount" name="loss3Amount" type="number" value={formData.loss3Amount} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="loss3Status" className={labelClass}>Status</label>
+                        <select id="loss3Status" name="loss3Status" value={formData.loss3Status} onChange={handleChange} className={inputClass}><option value="">Select...</option><option value="Open">Open</option><option value="Closed">Closed</option></select>
+                      </div>
+                      <div>
+                        <label htmlFor="additionalInsuredName" className={labelClass}>Additional insured / certificate holder name</label>
+                        <input id="additionalInsuredName" name="additionalInsuredName" type="text" value={formData.additionalInsuredName} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="additionalInsuredAddress" className={labelClass}>Additional insured address</label>
+                        <input id="additionalInsuredAddress" name="additionalInsuredAddress" type="text" value={formData.additionalInsuredAddress} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="additionalInsuredCity" className={labelClass}>Additional insured city</label>
+                        <input id="additionalInsuredCity" name="additionalInsuredCity" type="text" value={formData.additionalInsuredCity} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="additionalInsuredState" className={labelClass}>Additional insured state</label>
+                        <select id="additionalInsuredState" name="additionalInsuredState" value={formData.additionalInsuredState} onChange={handleChange} className={inputClass}><option value="">Select...</option>{US_STATES.map((st) => (<option key={st} value={st}>{st}</option>))}</select>
+                      </div>
+                      <div>
+                        <label htmlFor="additionalInsuredZip" className={labelClass}>Additional insured ZIP</label>
+                        <input id="additionalInsuredZip" name="additionalInsuredZip" type="text" value={formData.additionalInsuredZip} onChange={handleChange} className={inputClass} />
+                      </div>
+                      <div>
+                        <label htmlFor="certificateNeededBy" className={labelClass}>Certificate needed by</label>
+                        <input id="certificateNeededBy" name="certificateNeededBy" type="date" value={formData.certificateNeededBy} onChange={handleChange} className={inputClass} />
                       </div>
 
                       <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-espresso text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
